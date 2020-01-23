@@ -1,0 +1,34 @@
+button.button {
+    font-size: 20px;
+    background-color: #007da3;
+    border-radius: 14px;
+    padding: 10px 27px 10px 33px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-cards {
+    z-index: 1;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+}
+
+@media all and (min-width: 320px) {
+    button.button {
+       font-size: 25px;
+   }
+   .button-projects {
+       visibility: hidden;
+   }
+
+  }
+
+  @media all and (min-width: 1280px) {
+    .button-projects {
+        visibility: visible;
+    }
+
+  }

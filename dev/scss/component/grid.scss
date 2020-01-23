@@ -1,0 +1,85 @@
+@import "variable";
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: $marginGrid;
+
+}
+.grid-item {
+  padding: $paddingGrid;
+}
+
+.grid-cards-img {
+  height: auto;
+}
+
+.grid-cards-item  {
+  position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+
+.grid-cards-title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+* {
+  transition: 0.3s;
+}
+.grid-cards-description {
+  position: absolute;
+  bottom: 4px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 94.5%;
+  padding: 40px 0 40px 0;
+}
+.grid-cards-item:hover .grid-cards-description {
+  width: 94.5%;
+  height: 100%;
+  transition: .3s;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-cards-item:hover .button-cards {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media all and (min-width: 320px) {
+  .width-1-1 {
+    width: 100%;
+  }
+
+  .svg.icon.grid-item {
+    width: 50%;
+}
+}
+
+@media all and (min-width: 768px) {
+  .svg.icon.grid-item {
+    width: 33.3%;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .width-1-2 {
+    width: 50%;
+  }
+  .svg.icon.grid-item {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .width-1-3 {
+    width: 33.3%;
+  }
+}

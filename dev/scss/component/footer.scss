@@ -1,0 +1,35 @@
+@import "variable";
+
+@media (min-width: 1023px) {
+
+}
+@media all and (max-width: 1022px) {
+
+}
+@media all and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 558px) {
+
+}
+
+.footer {
+    background: linear-gradient(#074760, #007ca2);
+    color: #fff;
+}
+
+.footer h2 {
+    font-family: Uni Sans;
+    font-weight: 900;
+}
+
+.footer img {
+    border-radius: 7px;
+}
+
+@media all and (min-width: 768px) {
+    .footer-item {
+      width: 50%;
+    }
+  }

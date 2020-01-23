@@ -1,0 +1,81 @@
+
+
+// @media (min-width: 1200px) {
+//     .grid-cards img {
+//         min-width: 502px;
+//     }
+//     .section-img img {
+//         min-height: 520px;
+//     }
+
+// }
+
+@media (max-width: 991px) {
+
+}
+
+@media all and (min-width: 767px) {
+
+}
+
+@media all and (max-width: 578px) {
+
+}
+.hero {
+    position: relative;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-body {
+    padding-left: 111px;
+    padding-top: 111px;
+    color: #fff;
+    text-transform: uppercase;
+    max-width: 520px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-body h2 {
+   font-size: 30px;
+   font-weight: normal;
+}
+
+@media all and (min-width: 320px) {
+    .hero-body h2 {
+        font-size: 21px;
+        font-weight: normal;
+    }
+    .hero-body h1 {
+        font-size: 9px;
+    }
+
+    .hero-body {
+        max-width: 432px;
+        padding-left: 22px;
+    }
+
+    .hero button {
+        max-width: 333px;
+    }
+
+  }
+
+  @media all and (min-width: 1280px) {
+    .hero-body h2 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .hero-body h1 {
+        font-size: 45px;
+    }
+  }
