@@ -14,6 +14,8 @@ button.button {
     left: 50%;
     transform: translate(-50%, 0);
     visibility: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 
 @media all and (min-width: 320px) {

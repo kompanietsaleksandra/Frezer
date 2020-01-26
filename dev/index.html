@@ -19,69 +19,83 @@
 	<body>
 		<header class="header">
 			<div class="header__logo"><img src="img/images/RS логотип.png" alt=""></div>
-			<nav class="header__navigation">
-				<ul class="menu nav-menu">
-					<li class="menu-item">
-						<a href="#">УСЛУГИ</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">О НАС</a>
-					</li>
-					<li class="menu-item about-us">
-						<a href="#">КОНТАКТЫ</a>
-					</li>
-					<li class="menu-item">
-						<a href="#">099 017 07 474</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="header__nav-container">
+				<nav class="header__navigation">
+					<ul class="menu nav-menu">
+						<li class="menu-item">
+							<a href="#">УСЛУГИ</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">О НАС</a>
+						</li>
+						<li class="menu-item about-us">
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<a class="header_contacts_phone" href="tel:0800503456">
+						<svg class="icon phone"><use xlink:href="./img/svg/sprite.svg#smart_phone"></use></svg>
+						099 017 07 47
+					</a>
+					<label class="switchPhone">
+						<img class="arrow-down openHidePhone" title="открыть список телефонов" src="img/images/arrow-down.png" alt="arrow down">
+						<input type="checkbox">
+						<div class="header__hidden-phone">
+							<a class="header_contacts_phone" href="tel:0800503456"> 099 017 07 47</a>
+							<a class="header_contacts_phone" href="tel:0800503456"> 099 017 07 47</a>
+						</div>
+					</label>
+				</div>
+			</div>
 		</header>
 		<section class="hero">
-					<div class="hero-background">
-						<img src="img/images/Главное фото.jpg" alt="">
-					</div>
-					
-					<div class="hero-body">
-							<h2>любая степень сложности
-									на новейшем оборудовании</h2>
-							<h1>Изготовление пресс-форм
-									и металлообработка</h1>
-									<button class="button button-hero">Просчитать проект</button>	
-					</div>
+			<div class="hero-background">
+				<img src="img/images/Главное фото.jpg" alt="">
+			</div>
+			<div class="container">
+				<div class="hero-body">
+					<h2>любая степень сложности
+						на новейшем оборудовании</h2>
+					<h1>Изготовление пресс-форм
+						и металлообработка</h1>
+					<button class="button button-hero">Просчитать проект</button>
+				</div>
+			</div>
 		</section>
 		<div class="section-cards">
 				<div class="container">
 						<div class="grid grid-cards">
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/foto1.png" class="grid-cards-img" alt="">
+									<img src="img/images/block2foto1.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">ИЗГОТОВЛЕНИЕ ПРЕС-ФОРМ</div>
 										<button class="button button-cards">Подробнее</button>
 									</div>
 							</div>
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/Блок 2 фото 2.png" class="grid-cards-img" alt="">
+									<img src="img/images/block2foto2.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">Термическая обработка металла</div>
 										<button class="button button-cards">Подробнее</button>
 									</div>
 							</div>
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/Блок 2 фото 3.png" class="grid-cards-img" alt="">
+									<img src="img/images/block2foto3.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">Токарные работы</div>
 										<button class="button button-cards">Подробнее</button>
 									</div>
 							</div>
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/Блок 2 фото 4.png" class="grid-cards-img" alt="">	
+									<img src="img/images/block2foto4.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">Фрезерные работы</div>
 										<button class="button button-cards">Подробнее</button>
 									</div>
 							</div>
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/Блок 2 фото 5.png" class="grid-cards-img" alt="">
+									<img src="img/images/block2foto5.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">Продажа фрезерных
 											центров чпу</div>
@@ -89,7 +103,7 @@
 									</div>
 							</div>
 							<div class="grid-item grid-cards-item width-1-1 width-1-2 width-1-3">
-									<img src="img/images/Блок 2 фото 6.png" class="grid-cards-img" alt="">
+									<img src="img/images/block2foto6.png" class="grid-cards-img" alt="">
 									<div class="grid-cards-description">
 										<div class="grid-cards-title">Продажа токарных
 											станков чпу</div>
@@ -116,25 +130,26 @@
 						<button class="button button-projects">Получить консультацию</button>
 					</div>
 					<div class="section-projects-top grid">
-						<svg class="icon grid-item"><use xlink:href="./img/svg/sprite.svg#smart_icon1"></use></svg>
-						<svg class="icon grid-item"><use xlink:href="./img/svg/sprite.svg#smart_icon2"></use></svg>
-						<svg class="icon grid-item"><use xlink:href="./img/svg/sprite.svg#smart_icon3"></use></svg>
-						<svg class="icon grid-item"><use xlink:href="./img/svg/sprite.svg#smart_icon4"></use></svg>
-						<svg class="icon grid-item"><use xlink:href="./img/svg/sprite.svg#smart_icon5"></use></svg>
+						<svg class="icon"><use xlink:href="./img/svg/sprite.svg#smart_test"></use></svg>
+						<img class="icon grid-item" src="img/images/icon1.svg">
+						<img class="icon grid-item" src="img/images/icon2.svg">
+						<img class="icon grid-item" src="img/images/icon3.svg">
+						<img class="icon grid-item" src="img/images/icon4.svg">
+						<img class="icon grid-item" src="img/images/icon5.svg">
 					</div>
 					<div class="section-projects-btn">
 						<button class="button">Получить консультацию</button>
 					</div>
 					<h3>НАШИ ПРОЕКТЫ</h3>
 					<div class="section-projects-bottom ">
-							<div><img src="img/images/Блок 5 слайдер фото1.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото2.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото3.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото4.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото5.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото6.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото7.png" alt=""></div>
-							<div><img src="img/images/Блок 5 слайдер фото8.png" alt=""></div>
+							<div><img src="img/images/slider1.png" alt=""></div>
+							<div><img src="img/images/slider2.png" alt=""></div>
+							<div><img src="img/images/slider3.png" alt=""></div>
+							<div><img src="img/images/slider4.png" alt=""></div>
+							<div><img src="img/images/slider5.png" alt=""></div>
+							<div><img src="img/images/slider6.png" alt=""></div>
+							<div><img src="img/images/slider7.png" alt=""></div>
+							<div><img src="img/images/slider8.png" alt=""></div>
 					</div>
 			</div>
 		</div>

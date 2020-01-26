@@ -3,11 +3,14 @@
   box-sizing: border-box;
 }
 html {
-  font-family: unisansac, normal ;
+  font-family: unibook, serif;
   font-weight: normal;
   -webkit-text-size-adjust: 100%;
 }
 body {
+  margin: 0;
+}
+h1, h2 {
   margin: 0;
 }
 
@@ -31,6 +34,13 @@ textarea {
   }
   font-family: inherit;
   margin: 0;
+}
+
+button {
+  border: none;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 button,
@@ -63,28 +73,42 @@ button:-moz-focusring,
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
-  font-family: Uni Sans Heavy Caps;
-}
-
-
-@media (max-width: 1279px) {
-
+  font-family: unihev, serif;
 }
 
 @media all and (min-width: 320px) {
   .container {
     padding-left: 22px;
     padding-right: 22px;
+    max-width: 578px;
   }
 }
 
-@media all and (max-width: 578px) {
-
+@media all and (min-width: 578px) {
+  .container {
+    padding: 0 20px;
+    max-width: 767px;
+  }
 }
 
+@media all and (min-width: 767px) {
+  .container {
+    max-width: 1279px;
+  }
+}
+
+@media all and (min-width: 1279px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+
+@media all and (min-width: 1366px) {
+
+}
 
