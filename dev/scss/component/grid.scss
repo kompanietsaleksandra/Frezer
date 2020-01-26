@@ -32,16 +32,18 @@
 }
 .grid-cards-description {
   position: absolute;
-  bottom: 4px;
-  background-color: rgba(0, 0, 0, 0.65);
+  left: 15px;
+  bottom: 0;
+  background-color: rgba(0,0,0,.65);
   color: #fff;
-  width: 94.5%;
+  width: calc(100% - 30px);
   padding: 40px 0 40px 0;
+  transition: all .3s;
+  height: 98px;
 }
 .grid-cards-item:hover .grid-cards-description {
-  width: 94.5%;
   height: 100%;
-  transition: .3s;
+  transition: all .3s;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -51,6 +53,7 @@
 .grid-cards-item:hover .button-cards {
   visibility: visible;
   opacity: 1;
+  transition: .5s;
 }
 
 @media all and (min-width: 320px) {
@@ -60,12 +63,35 @@
 
   .svg.icon.grid-item {
     width: 50%;
-}
+  }
+
+  .grid-cards-item {
+    padding-top: 45px;
+  }
+
+  .grid-cards-item:first-child {
+    padding-top: 0;
+  }
+  .grid-cards-description {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media all and (min-width: 768px) {
   .svg.icon.grid-item {
     width: 33.3%;
+  }
+
+  .grid-cards-description {
+    font-size: 32px;
+  }
+
+  .grid-cards-item:hover .grid-cards-description {
+    font-size: 36px;
   }
 }
 

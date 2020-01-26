@@ -20,13 +20,28 @@
 }
 
 .footer h2 {
-    font-family: Uni Sans;
+    font-family: unibook, serif;
     font-weight: 900;
 }
 
 .footer img {
     border-radius: 7px;
 }
+
+@media all and (min-width: 320px) {
+    .footer h2 {
+     font-size: 45px;
+     padding: 95px 0 53px 0;
+    }
+
+    .footer {
+        font-size: 29px;
+    }
+
+    .footer-decription {
+        font-size: 25px;
+    }
+  }
 
 @media all and (min-width: 768px) {
     .footer-item {

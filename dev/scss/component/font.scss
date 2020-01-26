@@ -1,10 +1,8 @@
 @import "mixins";
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans Thin Caps',  100,    normal, ttf eot woff woff2 svg);
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans', 900, normal, ttf eot woff woff2 svg);
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans Thin Caps',   100,    italic, ttf eot woff woff2 svg);
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans',   normal,    normal, ttf eot woff woff2 svg);
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans Heavy Caps',   900,    normal, ttf eot woff woff2 svg);
-@include font-face(unisansac, '../fonts/unisansac/Uni Sans Heavy Caps',   900,    italic, ttf eot woff woff2 svg);
+@include font-face(unithin, '../fonts/unisansac/UniSansThinCaps',    100,    normal, ttf eot woff woff2 svg);
+@include font-face(unihev, '../fonts/unisansac/UniSans-Heavy',      900,    normal, ttf eot woff woff2 svg);
+@include font-face(unibook, '../fonts/unisansac/UniSans-Book',       normal, normal, ttf eot woff woff2 svg);
+@include font-face(unihevcap, '../fonts/unisansac/UniSansHeavyCaps',   900,    normal, ttf eot woff woff2 svg);
 
 
 
