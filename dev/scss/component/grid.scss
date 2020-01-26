@@ -64,11 +64,34 @@
   .svg.icon.grid-item {
     width: 50%;
   }
+
+  .grid-cards-item {
+    padding-top: 45px;
+  }
+
+  .grid-cards-item:first-child {
+    padding-top: 0;
+  }
+  .grid-cards-description {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media all and (min-width: 768px) {
   .svg.icon.grid-item {
     width: 33.3%;
+  }
+
+  .grid-cards-description {
+    font-size: 32px;
+  }
+
+  .grid-cards-item:hover .grid-cards-description {
+    font-size: 36px;
   }
 }
 

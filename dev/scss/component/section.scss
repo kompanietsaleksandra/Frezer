@@ -46,18 +46,26 @@
 
 @media all and (min-width: 320px) {
     .section-cards {
-        //font-size: 7px;
+        font-size: 29px;
     }
 
     .section-about-us h2 {
-        font-size: 20px;
+        font-size: 50px;
     }
     .section-about-us-description {
-        font-size: 23px;
+        font-size: 29px;
     }
     
     .section-projects-top {
         justify-content: center;
+    }
+
+    .section-projects h2 {
+        font-size: 50px;
+    }
+
+    .section-projects h3 {
+        font-size: 48px;
     }
 
     .section-projects-btn {
@@ -66,6 +74,21 @@
     }
   }
 
+  @media all and (min-width: 768px) {
+    .section-about-us h2 {
+        font-size: 48px;
+    }
+
+    .section-about-us-description {
+        font-size: 30px;
+    }
+
+    .section-projects h2 {
+        font-size: 48px;
+    }
+
+
+  }
 
 @media all and (min-width: 1280px) {
     .section-projects-btn {

@@ -28,6 +28,22 @@ button.button {
 
   }
 
+  
+@media all and (min-width: 768px) {
+    .button-hero {
+        font-size: 24px;
+    }
+
+    .button-cards {
+        font-size: 28px;
+    }
+
+    .button-projects {
+        font-size: 29px;
+    }
+
+  }
+
   @media all and (min-width: 1280px) {
     .button-projects {
         visibility: visible;
