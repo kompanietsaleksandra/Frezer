@@ -1,52 +1,58 @@
 button.button {
-    font-size: 20px;
-    background-color: #007da3;
-    border-radius: 14px;
-    padding: 10px 27px 10px 33px;
-    color: #fff;
-    cursor: pointer;
+  font-size: 20px;
+  background-color: #007da3;
+  border-radius: 14px;
+  padding: 10px 27px 10px 33px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .button-cards {
-    z-index: 1;
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    visibility: hidden;
-    opacity: 0;
-    transition: .5s;
+  z-index: 1;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  a {
+    color: #fff;
+  }
 }
 
 @media all and (min-width: 320px) {
-    button.button {
-       font-size: 25px;
-   }
-   .button-projects {
-       visibility: hidden;
-   }
+  button.button {
+     font-size: 25px;
+ }
+ .button-projects {
+     visibility: hidden;
+ }
 
-  }
+}
 
   
 @media all and (min-width: 768px) {
-    .button-hero {
-        font-size: 24px;
-    }
-
-    .button-cards {
-        font-size: 28px;
-    }
-
-    .button-projects {
-        font-size: 29px;
-    }
-
+  .button-hero {
+      font-size: 24px;
   }
 
-  @media all and (min-width: 1280px) {
-    .button-projects {
-        visibility: visible;
-    }
-
+  button.button {
+      font-size: 28px;
   }
+
+  .button-projects {
+      font-size: 29px;
+  }
+
+}
+
+@media all and (min-width: 1280px) {
+  .button-projects {
+      visibility: visible;
+  }
+  button.button {
+    font-size: 21px;
+    padding: 12px 20px 10px 20px;
+  }
+}
