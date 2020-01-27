@@ -1,0 +1,60 @@
+.service {
+  &__header {
+    padding-top: 120px;
+    &__background {
+      background-image: url("/img/images/service1.jpg");
+      min-height: 480px;
+      max-height: 480px;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.service__header h1 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.service-about-us h2 {
+  font-size: 36px;
+  color: #fff;
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
+
+.service-about-us-description {
+  color: #7dadc3;
+  font-size: 25px;
+}
+
+.service-about-us-description-top {
+  padding-bottom: 35px;
+}
+
+@media all and (min-width: 768px) {
+  .service__header h1 {
+    visibility: visible;
+    opacity: 1;
+    font-size: 36px;
+    color: #fff;
+    padding-top: 65px;
+    padding-left: 23px;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  .service-about-us h2 {
+    font-size: 50px;
+  }
+
+  .service__header h1 {
+    font-size: 50px;
+  }
+  
+  .service-about-us-description {
+    font-size: 33px;
+  }
+}
